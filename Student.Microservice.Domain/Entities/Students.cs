@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Student.Microservice.Domain.Entities
 {
-    public class Student
+    public class Students
     {
         public Guid Id { get; set; }
         public string  FirstName { get; set; }
@@ -16,7 +16,7 @@ namespace Student.Microservice.Domain.Entities
         public string CourseName { get; set; }
         public string  AdmissionNumber { get; set; }
         public DateTime AdmissionDate { get; set; }
-        public Student(string firstName, string lastName, string email, string phoneNumber, string courseName, string admissionNumber,DateTime admissionDate)
+        public Students(string firstName, string lastName, string email, string phoneNumber, string courseName, string admissionNumber,DateTime admissionDate)
         {
             Id = Guid.NewGuid();
             FirstName = firstName;
@@ -27,9 +27,9 @@ namespace Student.Microservice.Domain.Entities
             AdmissionNumber = admissionNumber;
             AdmissionDate = admissionDate;
         }
-        public static Student AddNewStudent(string firstName, string lastName, string email,string phoneNumber, string courseName,string admissionNumber, DateTime admissionDate)
+        public static Students AddNewStudent(string firstName, string lastName, string email,string phoneNumber, string courseName,string admissionNumber, DateTime admissionDate)
         {
-            return new Student(firstName, lastName, email, phoneNumber,courseName,admissionNumber,admissionDate);
+            return new Students(firstName, lastName, email, phoneNumber,courseName,admissionNumber,admissionDate);
         }
     }
    

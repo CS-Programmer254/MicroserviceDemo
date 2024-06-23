@@ -8,8 +8,7 @@ namespace Student.Microservice.Domain.Events
 {
     public class StudentRegisteredEvent
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+        public string FullNames { get; set; }
         public string Email { get; set; }
         public string PhoneNumber { get; set; }
         public string CourseName { get; set; }

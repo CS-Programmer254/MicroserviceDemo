@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Persistence\" />
+    <ProjectReference Include="..\Student.Microservice.Domain\Student.Microservice.Domain.csproj" />
   </ItemGroup>
 
 </Project>
