@@ -21,16 +21,16 @@ namespace Notification.Microservice.API.Consumer
         public async Task ConsumeAsync(NewStudentRegisteredEvent message, CancellationToken cancellationToken = default)
         {
            var smsBody= "Dear {message.FullName}, we are happy to welcome you to Maseno University.Your Registration Number is {message.AdmissionNumber}.You will receive your portal login credentials via email,shortly!.Thank you";
-          
             var newNotification = new SendNotificationCommand
             {
-                notificationDto =new  NotificationDto
+                notificationDto =new NotificationDto
                 {
-                    Message=smsBody,
-                    SenderPhoneNumber="0769860886",
-                    ReceipientPhoneNumber=message.PhoneNumber,
-                    ReceipientId=message.Id,
+                    Message = smsBody,
+                    SenderPhoneNumber = "0769860886",
+                    ReceipientPhoneNumber = message.PhoneNumber,
+                    ReceipientId = new Guid(),
                 }
+
             };
             await _mediator.Send(newNotification);
         }

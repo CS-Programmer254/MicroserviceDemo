@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Notification.Microservice.Application.Commands
 {
-    public class SendNotificationCommand:IRequest<Guid>
+    public class SendNotificationCommand:IRequest<bool>
     {
         public NotificationDto notificationDto { get; set; }
     }
