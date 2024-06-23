@@ -39,7 +39,7 @@ namespace Student.Microservice.Application.Services
    
                 await _studentRepository.SaveStudentAsync(newStudent);
 
-                await _bus.PubSub.PublishAsync(new StudentRegisteredEvent
+                await _bus.PubSub.PublishAsync(new NewStudentRegisteredEvent
                 {
                     FullNames = $"{newStudent.FirstName} {studentCommand.studentDto.LastName}",
                     Email =newStudent.Email,

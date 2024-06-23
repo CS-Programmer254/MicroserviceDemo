@@ -28,6 +28,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Notification.Microservice.Application\Notification.Microservice.Application.csproj" />
     <ProjectReference Include="..\Notification.Microservice.Infrastructure\Notification.Microservice.Infrastructure.csproj" />
+    <ProjectReference Include="..\Student.Microservice.Domain\Student.Microservice.Domain.csproj" />
   </ItemGroup>
 
 </Project>

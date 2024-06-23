@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="EasyNetQ" Version="7.8.0" />
+    <PackageReference Include="Infobip.Api.Client" Version="2.1.3" />
     <PackageReference Include="MediatR" Version="12.3.0" />
   </ItemGroup>
 

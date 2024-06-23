@@ -10,6 +10,6 @@ namespace Notification.Microservice.Application.Commands
 {
     public class SendNotificationCommand:IRequest<Guid>
     {
-        NotificationDto notificationDto { get; set; }
+        public NotificationDto notificationDto { get; set; }
     }
 }

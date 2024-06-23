@@ -9,6 +9,6 @@ namespace Notification.Microservice.Application.Services
 {
     public interface INotificationService
     {
-        Task<bool> SendNotificationAsync(SendNotificationCommand notificationSentCommand);
+        Task<bool> SendNotificationAsync(string fromPhoneNumber, string toPhoneNumber, string messageBody);
     }
 }

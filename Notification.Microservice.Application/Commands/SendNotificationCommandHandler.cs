@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Notification.Microservice.Application.Commands
 {
-    public class SendNotificationCommandHandler : IRequestHandler<SendNotificationCommand, Guid>
+    public class NotificationSentCommandHandler : IRequestHandler<SendNotificationCommand, Guid>
     {
         public Task<Guid> Handle(SendNotificationCommand request, CancellationToken cancellationToken)
         {
