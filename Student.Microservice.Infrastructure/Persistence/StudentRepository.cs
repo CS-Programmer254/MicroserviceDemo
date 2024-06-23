@@ -1,4 +1,5 @@
 ﻿using Student.Microservice.Domain.Entities;
+using Student.Microservice.Domain.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,14 +8,14 @@ using System.Threading.Tasks;
 
 namespace Student.Microservice.Infrastructure.Persistence
 {
-    internal class StudentRepository
+    public class StudentRepository:IStudentRepository
     {
         private readonly StudentDbContext _studentDbContext;
         public StudentRepository(StudentDbContext studentDbContext)
         {
             _studentDbContext = studentDbContext ?? throw new ArgumentNullException(nameof(studentDbContext));
         }
-        public async Task<bool> SaveCustomerAsync(Students student)
+        public async Task<bool> SaveStudentAsync(Students student)
         {
             try
             {
