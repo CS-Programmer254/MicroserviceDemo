@@ -25,4 +25,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Notification.Microservice.Application\Notification.Microservice.Application.csproj" />
+    <ProjectReference Include="..\Notification.Microservice.Infrastructure\Notification.Microservice.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
