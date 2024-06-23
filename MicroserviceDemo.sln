@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notification.Microservice.A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notification.Microservice.API", "Notification.Microservice.API\Notification.Microservice.API.csproj", "{BFDD6273-95EF-4276-A74F-0D21273C7DE0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Consumer", "Consumer", "{46AD2184-0100-438A-A207-3B1F9FCB637C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -80,6 +82,7 @@ Global
 		{BFDBF76F-2818-492D-B263-55D6656AEE5A} = {62092DF2-072B-44E3-8D4F-E1652C4522F2}
 		{9ABC9BD0-67A7-4B0E-ADF3-2F13290D4426} = {62092DF2-072B-44E3-8D4F-E1652C4522F2}
 		{BFDD6273-95EF-4276-A74F-0D21273C7DE0} = {62092DF2-072B-44E3-8D4F-E1652C4522F2}
+		{46AD2184-0100-438A-A207-3B1F9FCB637C} = {62092DF2-072B-44E3-8D4F-E1652C4522F2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BD30D4E8-5124-46EC-9923-6B81FFD0848C}
